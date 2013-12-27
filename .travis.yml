@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.0.0
 install:
-  - sudo apt-get update
-  - sudo apt-get install libgeos-dev libproj-dev postgresql-9.1-postgis
+  #- sudo apt-get update
+  #- sudo apt-get install libgeos-dev libproj-dev postgresql-9.1-postgis
 before_script:
   - createdb -U postgres template_postgis
   - psql -c 'CREATE DATABASE postgis_test;' -U postgres
